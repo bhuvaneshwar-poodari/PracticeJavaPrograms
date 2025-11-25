@@ -7,14 +7,14 @@ public class CheckingThreadLifeCycle {
 		n1.start();
 		n1.join();
 		Thread.currentThread().getName();
-		System.out.println("dont show of your talented in unneccessary placess");
+		System.out.println("dont show off your talented in unneccessary placess");
 	}
 
 }
 class NewEx1 extends Thread{
 	public void run() {
 	for(int i=0;i<=4;i++) {
-		System.out.println("i never give up until i reached my goal"+i);
+		System.out.println("i never give up until i reached my goal"+Thread.currentThread().getName());
 	}
 	}
 }

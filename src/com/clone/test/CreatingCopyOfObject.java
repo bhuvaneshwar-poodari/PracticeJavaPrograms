@@ -12,7 +12,9 @@ class Person implements Cloneable {
 	public void details() {
 		System.out.println(rollno+""+","+name+"");
 	}
-	
+	public Object clone() throws CloneNotSupportedException {
+		return super.clone();
+	}
 }
 
 
@@ -21,8 +23,8 @@ class Person implements Cloneable {
 public class CreatingCopyOfObject  {
 	
 	public static void main(String args[]) {
-		 Person p1 = new Person(4,"bhuvi");
-		 Person p2 = new Person(4,"bhuvi");
+		 Person p1 = new Person(4,"Hello vinay How Are You Whats Going On");
+		 Person p2 = (Person)p1;
 		p1.details();
 		p2.details();
 	}
